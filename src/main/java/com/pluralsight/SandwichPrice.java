@@ -24,9 +24,9 @@ public class SandwichPrice {
         int size = user.nextInt();
 
         if (size == 1){
-            System.out.printf("That is " + "%.2f" , (regularPrice - discount));
+            System.out.printf("That is " + "%.2f" , (regularPrice * (1 - discount)));
         } else if (size == 2) {
-            System.out.printf("That is " + "%.2f" , (largePrice - discount));
+            System.out.printf("That is " + "%.2f" , (largePrice * (1 - discount)));
         } else{
             System.out.println("Not an option");
         }
