@@ -14,7 +14,7 @@ public class SandwichPrice {
         System.out.print("How old are you?: ");
         int age = user.nextInt();
 
-        if (age <= 17){
+        if (age <= 17) {
             discount = .10;
         } else if (age >= 65) {
             discount = .20;
@@ -23,15 +23,14 @@ public class SandwichPrice {
         System.out.println("\nWhat size \n(1) Regular \n(2) Large");
         int size = user.nextInt();
 
-        if (size == 1){
-            System.out.printf("That is " + "%.2f" , (regularPrice * (1 - discount)));
+        if (size == 1) {
+            System.out.printf("That is " + "%.2f", (regularPrice * (1 - discount)));
         } else if (size == 2) {
-            System.out.printf("That is " + "%.2f" , (largePrice * (1 - discount)));
-        } else{
+            System.out.printf("That is " + "%.2f", (largePrice * (1 - discount)));
+        } else {
             System.out.println("Not an option");
         }
 
         user.close();
-
     }
 }
