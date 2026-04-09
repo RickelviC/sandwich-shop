@@ -31,5 +31,7 @@ public class SandwichPrice {
             System.out.println("Not an option");
         }
 
+        user.close();
+
     }
 }
